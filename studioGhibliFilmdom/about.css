@@ -1,0 +1,109 @@
+main {
+    text-align: center;
+    font-size: 200%;
+}
+
+section {
+    column-count: 2;
+    column-width: 700px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.founders img {
+    height: 100%;
+    width: 100%;
+}
+
+/* NOTE initially did this so the 2 pictures would sit next to one another but it was sitting on top of one another instead */
+/* .films img{
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.films_container::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+
+.films_container {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.films {
+    display: flex;
+}
+
+a {
+    font-weight: bold;
+}
+
+/* NOTE Floating Back-To-Top Button*/
+#myBtn, #myBtn a {
+    position: fixed;
+    bottom: 10px;
+    float: right;
+    right: 100%;
+    left: 95%;
+    height: 40px;
+    max-width: 40px;
+    width: 100%;
+    font-size: 12spx;
+    border-color:slategray;
+    background-color:#2f3542;
+    padding: .5px;
+    border-radius: 4px;
+}
+
+/* NOTE On Hover Color Change*/
+#myBtn:hover {
+    background-color:#2f3542;
+    opacity: 0.5;
+    filter: alpha(opacity=30);
+}
+
+.learnMore a:link {
+    color: #1B9CFC;
+}
+
+.learnMore a:visited {
+    color: #0984e3;
+}
+
+.learnMore a:hover {
+    color: #182C61;
+}
+
+.learnMore:active {
+    color: #182C61;
+}
+
+p a {
+    font-size: 100%;
+}
+
+p a:link {
+    color: #1B9CFC;
+}
+
+p a:visited {
+    color: #0984e3;
+}
+
+p a:hover {
+    color: #182C61;
+}
+
+p a:active {
+    color: #182C61;
+}
+
+/* NOTE makes banner image responsive */
+.banner img {
+    height: auto;
+    max-width: 100%;
+}

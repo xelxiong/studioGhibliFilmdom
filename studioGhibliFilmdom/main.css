@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+* {
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-logo {
+    cursor: pointer;
+    /*NOTE when hovering over logo, turns into a cursor */
+    margin-right: auto;
+}
+
+.navbar-logo img {
+    width: 300px;
+    height: 90px;
+}
+
+.navigation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100;
+    /* NOTE where the content sits on the page */
+    z-index: 1;
+}
+
+.navbar-right {
+    float:right;
+    padding-right: 10%;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    padding: 10px;
+    top: 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.navbar-right li a {
+    transition: all 0.3s ease 0s;
+    /*NOTE transition element used so <li> and <a> elements transition swith easy and no delay */
+}
+
+.navbar-right a:hover {
+    text-decoration: none;
+    color: darkgrey;
+}
+
+.navbar-logo {
+    padding-left: 10%;
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.video-container {
+    z-index: -100;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#video-bg {
+    width: 100%;
+
+}
+
+.main {
+    column-count: 2;
+    column-width: 400px;
+    /* NOTE -tells the browser how many pixels to show*/
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+footer {
+    padding: 0px;
+}
+
+/*NOTE - removed this code b/c it was not helping me achieve the 3-column look! GRRRR!*/
+/* .footer_container {
+    width: auto;
+    display: flex; /*NOTE - responsive and mobile friendly, flex expands items to fill available free spaces or shrinks them to prevent overflow 
+} */
+
+/* NOTE - footer elements used margin-top with negative vlaue to line up the text */
+.copyright {
+    /* float: left; */
+    text-align: left;
+    margin-top: 5px;
+}
+
+.footer_container p {
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+/* .audioPlayer {
+    float: right;
+    text-align: right;
+    margin-top: -18px;
+} */
+
+/* NOTE adding effects to <p> links */
+
+p a:link {
+    color: #1B9CFC;
+}
+
+p a:visited {
+    color: #0984e3;
+}
+
+p a:hover {
+    color: #182C61;
+}
+
+p a:active {
+    color: #182C61;
+}
+
+/* NOTE scrollbar cause it disappeared */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #ced6e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #dcdde1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #2f3542;
+}
+
+
+.portfolio-section {
+    margin-top: 50%;
+}
+
+.tagline-right-text {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 17%;
+}
+
+.tagline-left-text {
+    position: absolute;
+    margin-top: 0%;
+    margin-left: 11%;
+}

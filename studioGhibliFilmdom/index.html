@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Filmdom</title>
+    <!-- NOTE - link to styles sheet -->
+    <link rel="stylesheet" href="main.css">
+
+    <!-- NOTE - implementation of fav icon -->
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+</head>
+
+<body>
+
+    <header>
+        <div class="header">
+            
+            <nav class="navigation">
+                <a href="index.html" class="navbar-logo"><img src="images/sleepingTotoroGif.gif" alt="Sleeping Totoro Gif"></a>
+
+                <div class="navbar-right">
+                    <a href="index.html">HOME</a>
+                    <a href="films.html">FILMS</a>
+                    <a href="about.html">ABOUT</a>
+                </div>
+            </nav>
+
+            <div class="video-container">
+                <video autoplay loop muted id="video-bg">
+
+                    <source src="video/30 Minutes of Relaxing Visuals from Studio Ghibli HBO Max.mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </div>
+    </header>
+
+    <!-- NOTE code is from a video || not needed on page however need the properties so footer can work -->
+    <div class="portfolio-section">
+        <div class="tagline-left">
+          <div class="tagline-left-text"></div>
+        </div>
+
+        <div class="tagline-right">
+          <div class="tagline-right-text"></div>
+        </div>
+      </div>
+
+    <!-- SECTION footer element -->
+    <!--TODO - Add link to credit/sources file  -->
+    <footer>
+        <!-- FIXME - Need to fix audio file and move to right of footer -->
+        <div class="footer_container">
+            <div class="copyright">
+                <p>copyright &copy; <a href="https://ghiblicollection.com/" target="_blank">Studio Ghibli</a>
+                </p>
+            </div>
+
+            
+
+            <!-- <div class="audioPlayer">
+                <figure>
+                    <figcaption>Listen to the T-Rex:</figcaption>
+                    <audio autoplay=true controls src="[Emotional Music] Ghibli Epic Songs Collection.mp3">
+                        Your browser does not support the
+                        <code>audio</code> element.
+                    </audio>
+                </figure> -->
+
+                <!-- <audio controls autoplay>
+                <source src="[Emotional Music] Ghibli Epic Songs Collection.mp3" type="audio/mpeg">
+            </audio>  -->
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

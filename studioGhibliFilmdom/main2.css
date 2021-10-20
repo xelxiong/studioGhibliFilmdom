@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+ * {
+    background-color: white;
+    box-sizing: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+/* CSS for nav to sit ontop of video background */
+li, a, button {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /*NOTE pushes left and right items to the far edges and the item in the middle will be evenly spaced between the two*/
+    align-items: center; /*NOTE takes everything in the header and centers on one another*/
+    padding: 1px 10%;
+}
+
+.logo {
+    cursor: pointer; /*NOTE when hovering over logo, turns into a cursor */
+    margin-right: auto;
+}
+
+.logo img {
+    width: 300px;
+    height: 90px;
+}
+
+.navH1 {
+    margin-right: 20%;
+}
+
+.nav_links {
+    list-style: none; /*NOTE instead of displaying the content up and down, it goes side by side*/
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s; /*NOTE transition element used so <li> and <a> elements transition swith easy and no delay */
+}
+
+.nav_links li a:hover {
+    color: darkgrey;
+}
+
+.nav_links li {
+    display: inline-block; 
+}
+
+.videoHeader {
+    align-items: center;
+    /* background-color: aliceblue; */
+    /* font family */
+    /* padding: 20px; */
+    /* margin: -8px; */
+    /* NOTE - z-index defines the layering of each element -- look at it in a 3d way -- how they stack on top of eachother */
+    /* z-index: -1; */
+    /* opacity: 0.7; */
+}
+
+.videoBckgrnd {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.color-overlay {
+    position: absolute;
+    /* NOTE - top and left is used to center the text 
+    -- placement of the element 
+    -- if you do top: 0% that will put you all the way to the
+    top veritcally, and then top: 20% from the top;
+    -- other properties: left, right, bottom, top*/
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    text-align: center;
+    font-size: 4rem;
+    /* padding-top: 15%; */
+
+}
+
+/* .color-overlay h3 {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+} */
+
+body {
+    /* NOTE - override the default margin for the body*/
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'IM Fell English SC', serif; */
+}
+
+.main {
+    column-count: 2;
+    column-width: 400px;
+    /* NOTE -tells the browser how many pixels to show*/
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+footer {
+    padding: 1px 1px;
+    background-color: white;
+}
+
+/*NOTE - removed this code b/c it was not helping me achieve the 3-column look! GRRRR!*/
+/* .footer_container {
+    width: auto;
+    display: flex; /*NOTE - responsive and mobile friendly, flex expands items to fill available free spaces or shrinks them to prevent overflow 
+} */
+
+/* NOTE - footer elements used margin-top with negative vlaue to line up the text */
+.copyright {
+    /* float: left; */
+    text-align: left;
+    margin-top: 0;
+}
+
+.footer_container p {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.audioPlayer {
+    float: right;
+    text-align: right;
+    margin-top: -18px;
+}
+
+/* NOTE adding effects to <p> links */
+
+p a:link {
+    color: #1B9CFC;
+}
+
+p a:visited {
+    color: #0984e3;
+}
+
+p a:hover {
+    color: #182C61;
+}
+
+p a:active {
+    color: #182C61;
+}
+
+/* NOTE scrollbar cause it disappeared */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ced6e0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #dcdde1;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2f3542;
+  }
